@@ -1,0 +1,69 @@
+﻿{% extends "base.html" %}
+{% block title %}{{post.title_page}}{% endblock title %}
+{% block desc %}{{post.descr}}{% endblock desc %}
+{% block canonical %}{{post.post_url}}{% endblock canonical %}
+{% block inform %}
+<link rel="stylesheet" href="/static/css/home.css" type="text/css" media="all">
+<meta name="keywords"  content="Щиты квартирные, Щиты освещения, Щит распределительный, Насосные щиты, Щиты АВР, Электрооборудование, Электроустановочные изделия" />
+{% endblock inform %}
+
+{% block body %}
+
+			<div id="cg-page-wrap" class="hfeed site">				
+				
+<div class="content-area">
+			<article id="post-67" class="post-67 page type-page status-publish has-post-thumbnail hentry">
+		<div class="header-wrapper">
+			<div class="cg-hero-bg" style="background-image: url(http://elecso.ru/wp-content/themes/elecso/img/71559_0.jpg); "></div>
+			<div class="overlay"></div> 
+			<div class="container">
+				<div class="row vertical-align">
+					<div class="col-xs-12 col-lg-9 col-md-9">
+						<header class="entry-header">
+							<h1 class="cg-page-title">{{post.title|safe}}</h1>
+						</header>
+					</div>
+					<div class="col-xs-12 col-lg-3 col-md-3">
+						
+	<div class="cta-button">
+		<a href="#" class="showpopup" onclick="yaCounter39821600.reachGoal('click'); return false;">Задать вопрос</a>
+	</div>
+
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-sm-9">
+					<p class="sub-title">
+					<span>
+					<span typeof="v:Breadcrumb">
+						{{breadcrumb| safe }}
+						</span>
+						</span></p>					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	    <div class="entry-content">		
+		{{post.post_content|safe}}
+		    </div><!-- .entry-content -->
+
+	
+</article><!-- #post-## -->
+		<div class="container">
+					</div>
+	</div><!-- #primary -->
+
+
+</div> 
+</div><!--/page-container -->
+
+</div><!--/wrapper-->
+</div><!-- close #cg-page-wrap -->
+{% endblock body %}

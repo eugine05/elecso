@@ -1,0 +1,150 @@
+﻿{% extends "base.html" %}
+{% block title %}{{post.title_page}}{% endblock title %}
+{% block desc %}{{post.descr}}{% endblock desc %}
+{% block canonical %}http://elecso.ru/{{post.post_url}}{% endblock canonical %}
+{% block inform %}
+<link rel="stylesheet" href="/static/css/home.css" type="text/css" media="all">
+<meta name="keywords"  content="Щиты квартирные, Щиты освещения, Щит распределительный, Насосные щиты, Щиты АВР, Электрооборудование, Электроустановочные изделия" />
+{% endblock inform %}
+
+{% block body %}
+
+<div id="cg-page-wrap" class="hfeed site">
+
+		<div class="header-wrapper">
+			<div class="cg-hero-bg" style="background-image: url(http://elecso.ru/static/img/71559_0.jpg); "></div>
+			<div class="overlay"></div> 
+			<div class="container">
+				<div class="row vertical-align">
+					<div class="col-xs-12 col-lg-9 col-md-9">
+						<header class="entry-header">
+							<h1 class="cg-page-title">{{post.title|safe}}</h1>
+						</header>
+					</div>
+					<div class="col-xs-12 col-lg-3 col-md-3">
+						
+	<div class="cta-button">
+		<a href="#" class="showpopup" onclick="yaCounter39821600.reachGoal('click'); return false;">Задать вопрос</a>
+	</div>
+
+						</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-sm-9">
+					<p class="sub-title">
+					<span>
+					<span typeof="v:Breadcrumb">
+						{{breadcrumb| safe }}
+						</span>
+						</span></p>					
+					</div>
+				</div>
+			</div>
+		</div>
+
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-md-push-3 col-lg-push-3">
+                <div id="primary" class="content-area">
+				
+						
+			
+                    <main id="main" class="site-main">
+
+						
+<article id="post-122" class="post-122 page type-page status-publish has-post-thumbnail hentry">
+    <div class="entry-content pratuctok">
+		{{post.post_content|safe}}
+		
+		    </div><!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+							
+						
+                    </main><!-- #main -->
+                </div><!-- #primary -->
+
+            </div>
+
+	
+<div class="col-lg-3 col-md-3 col-md-pull-9 col-lg-pull-9 sidebar">
+<div id="secondary">
+<aside id="advanced_sidebar_menu-3" class="widget-1 widget-first widget-odd widget advanced-sidebar-menu">
+<ul class="child-sidebar-menu">
+	<li class="page_item page-item-95 {% if post.title == 'Услуги' %}current_page_item{% endif %}">
+	<a href="http://elecso.ru/uslugi">Услуги</a></li>
+	<li class="page_item page-item-110 {% if post.title == 'Распределительный щит' %}current_page_item{% endif %}">
+	<a href="http://elecso.ru/uslugi/raspredelitelnyj-shhit">Распределительный щит</a></li>
+	<li class="page_item page-item-122 {% if post.title == 'Шкаф управления насосами' %}current_page_item{% endif %}">
+	<a href="http://elecso.ru/uslugi/shkaf-upravleniya-nasosami">Шкаф управления насосами</a></li>
+	<li class="page_item page-item-141 {% if post.title == 'Автоматический ввода резерва - АВР' %}current_page_item{% endif %}">
+	<a href="http://elecso.ru/uslugi/shkaf-avtomaticheskogo-vvoda-rezerva">Шкаф автоматического ввода резерва</a></li>
+	<li class="page_item page-item-102 current_page_parent has_children sub_nav_h_qwer {% if post.title == 'Продажа электрооборудования' or post.title == 'Преобразователи частоты' or post.title == 'Устройства плавного пуска' or post.title == 'Модульное оборудование' or post.title == 'Электроустановочные изделия' %}current_page_item{% endif %}">
+	<a href="http://html.loc/uslugi/elektrooborudovanie" onclick="return false;" class="qtqtqtqt">Продажа электрооборудования</a>
+	<ul class="grandchild-sidebar-menu level-1 children sub_nav_qwer">
+		<li class="page_item page-item-70555 {% if post.title == 'Преобразователи частоты' %}current_page_item{% endif %}">
+		<a href="http://elecso.ru/uslugi/prodazha-elektrooborudovaniya/preobrazovateli-chastoty">Преобразователи частоты</a></li>
+		<li class="page_item page-item-70557 {% if post.title == 'Устройства плавного пуска' %}current_page_item{% endif %}">
+		<a href="http://elecso.ru/uslugi/prodazha-elektrooborudovaniya/ustrojstva-plavnogo-puska">Устройства плавного пуска</a></li>
+		<li class="page_item page-item-70557 {% if post.title == 'Модульное оборудование' %}current_page_item{% endif %}">
+		<a href="http://elecso.ru/uslugi/prodazha-elektrooborudovaniya/modulnoe-oborudovanie">Модульное оборудование</a></li>
+		<li class="page_item page-item-70555 {% if post.title == 'Электроустановочные изделия' %}current_page_item{% endif %}">
+		<a href="http://elecso.ru/uslugi/prodazha-elektrooborudovaniya/elektroustanovochnye-izdeliya">Электроустановочные изделия</a></li>
+	</ul>
+	</li>
+</ul><!-- End child-sidebar-menu -->
+</aside>
+<script type="text/javascript">
+$(function () {
+	var el = $('.qtqtqtqt');
+		prevElement = el.next('.sub_nav_qwer').prev();	
+	el.click(function() {
+		var checkElement = $(this).next('.sub_nav_qwer');
+			visibleElement = $('ul.sub_nav_qwer:visible');	
+/*			visibleElement.toggleClass('current_page_item');	*/	
+		checkElement.parent().toggleClass('current_page_item');	
+		
+/*		
+		visibleElement.stop().animate({'height':'toggle'}, 500);
+		if((checkElement.is('ul.sub_nav_qwer')) && (!checkElement.is(':visible'))) {
+			checkElement.stop().animate({'height':'toggle'}, 500).parent().toggleClass('current_page_item');
+		}
+		*/
+	});
+});
+</script>
+
+<aside id="text-11" class="widget-3 widget-last widget-odd boxed document widget widget_text">
+<h4 class="widget-title"><span>Опросные листы</span></h4>			
+<div class="textwidget">
+<p>Для заказа необходимо заполниить опросный листы.</p>
+<p><a href="/static/info/Oprosny_list_PR.xlsx" class="pdf">Опросный лист РЩ</a></p>
+<p><a href="/static/info/Oprosny_list_AVR.xlsx" class="pdf">Опросный лист АВР</a></p>
+<p><a href="/static/info/Oprosny_list_SHUN.xlsx" class="pdf">Опросный лист ШУН</a></p>
+</div>
+</aside>
+
+
+				
+</div>	
+            </div>
+        </div><!--/row -->
+    </div><!--/content -->
+</div><!--/container -->
+
+
+
+</div> 
+</div><!--/page-container -->
+
+</div><!--/wrapper-->
+</div><!-- close #cg-page-wrap -->
+{% endblock body %}

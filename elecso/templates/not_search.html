@@ -1,0 +1,112 @@
+﻿{% extends "base.html" %}
+{% block title %}{{title_search}} | Элексо{% endblock title %}
+{% block desc %}{% endblock desc %}
+{% block canonical %}{% endblock canonical %}
+{% block inform %}
+<link rel="stylesheet" href="/static/css/home.css" type="text/css" media="all">
+<meta name="robots" content="noindex,follow"></meta>
+{% endblock inform %}
+
+{% block body %}
+
+
+<div id="cg-page-wrap" class="hfeed site">
+
+		<div class="header-wrapper">
+			<div class="cg-hero-bg" style="background-image: url(http://elecso.ru/static/img/71559_0.jpg); "></div>
+			<div class="overlay"></div> 
+			<div class="container">
+				<div class="row vertical-align">
+					<div class="col-xs-12 col-lg-9 col-md-9">
+						<header class="entry-header">
+							<h1 class="cg-page-title">Результаты поиска: {{title_search}}</h1>
+						</header>
+					</div>
+					<div class="col-xs-12 col-lg-3 col-md-3">
+						
+	<div class="cta-button">
+		<a href="#" class="showpopup" onclick="yaCounter39821600.reachGoal('click'); return false;">Задать вопрос</a>
+	</div>
+
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-sm-9">
+					<p class="sub-title">
+					<span>
+					<span typeof="v:Breadcrumb">
+						{{breadcrumb| safe}}
+						</span>
+						</span></p>					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+    <div class="content">
+
+        <div class="row">
+							<div class="col-lg-9 col-md-9 col-sm-12">
+					<div id="primary" class="content-area cg-blog-layout">
+					
+	<main id="main" class="site-main" role="main">
+							<div>
+			<section class="no-results  not-found">
+		<header>
+		<h1 class="page-title">Ничего не найдено</h1>
+		</header>
+		<div class="page-content">
+		<p>Извините, по данному запросу ничего не найдено. Пожалуйста, введите другое слово.</p>
+		</div> 
+		</section> 
+	
+</div>
+						</main>
+
+
+</div><!-- #primary -->
+</div><!--/9 -->
+
+
+<div class="col-lg-3 col-md-3 col-sm-12 sidebar right">
+<div id="secondary" class="widget-area" role="complementary">
+	<aside id="recent-posts-2" class="widget-2 widget-even widget widget_recent_entries">		
+	<h4 class="widget-title"><span>Статьи</span></h4>		
+		<ul>
+		{% for post in post %}
+		<li>
+			<a href="http://elecso.ru{{ post.post_url}}">{{post.title}}</a>
+			<span class="post-date">{{post.post_date}}</span>
+			</li>
+        {% endfor %}
+		</ul>
+		<a href="http://elecso.ru/poleznaya-informaciya" class="prohtec">Читать далее →</a>
+	</aside>		
+</div>
+</div>
+
+
+</div><!--/row -->
+    </div><!--/content -->
+</div><!--/container -->
+
+</div>
+</div><!--/page-container -->
+
+</div><!--/wrapper-->
+</div><!-- close #cg-page-wrap -->
+
+
+
+
+
+
+
+{% endblock body %}

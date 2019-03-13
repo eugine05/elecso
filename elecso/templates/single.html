@@ -1,0 +1,117 @@
+﻿{% extends "base.html" %}
+{% block title %}{{post.title_page}}{% endblock title %}
+{% block desc %}{{post.descr}}{% endblock desc %}
+{% block canonical %}http://elecso.ru/{{post.post_url}}{% endblock canonical %}
+{% block inform %}
+<link rel="stylesheet" href="/static/css/home.css" type="text/css" media="all">
+<meta name="keywords"  content="Щиты квартирные, Щиты освещения, Щит распределительный, Насосные щиты, Щиты АВР, Электрооборудование, Электроустановочные изделия" />
+{% endblock inform %}
+
+{% block body %}
+
+			<div id="cg-page-wrap" class="hfeed site">
+
+		<div class="header-wrapper">
+			<div class="cg-hero-bg" style="background-image: url(<?php the_post_thumbnail_url();?>); "></div>
+			<div class="overlay"></div> 
+			<div class="container">
+				<div class="row vertical-align">
+					<div class="col-xs-12 col-lg-9 col-md-9">
+						<header class="entry-header">
+							<h1 class="cg-page-title">{{post.title}}</h1>
+						</header>
+					</div>
+					<div class="col-xs-12 col-lg-3 col-md-3">
+						
+	<div class="cta-button">
+		<a href="#" class="showpopup" onclick="yaCounter39821600.reachGoal('click'); return false;">Задать вопрос</a>
+	</div>
+
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-sm-9">
+					<p class="sub-title">
+					<span>
+					<span typeof="v:Breadcrumb">
+						{{breadcrumb| safe }}
+						</span>
+						</span></p>					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+<div class="container">
+    <div class="content">
+        <div class="row">
+							<div class="col-lg-9 col-md-9">
+					<div id="primary" class="content-area">
+						<main id="main" class="site-main">
+
+
+<article id="post-58" class="post-58 post type-post status-publish format-standard has-post-thumbnail hentry category-investments tag-online-services tag-portfolios">
+	<div class="image">
+	<img src="{{post.img }}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image wp-post-image" alt="Мощность приборов" srcset="{{post.img }} 660w, {{post.img }}" sizes="(max-width: 660px) 100vw, 660px" height="330" width="660">
+
+</div>
+
+	<div class="blog-meta">
+		<span class="entry-date published updated">{{post.post_date }}</span> 
+		<span class="comments"><?php comments_number('0', '1', '%' ) ?></span>
+	</div>
+
+
+<!-- <h2 class="hentry__title"><?php the_title(); ?></h2>
+ -->
+
+
+<div class="entry-content">{{post.post_content| safe }}</div> 
+
+
+</article> 
+
+
+</main><!-- #main -->
+					</div><!-- #primary -->
+				</div>
+
+				
+				
+<div class="col-lg-3 col-md-3 col-sm-12 sidebar right">
+<div id="secondary" class="widget-area" role="complementary">
+	<aside id="recent-posts-2" class="widget-2 widget-even widget widget_recent_entries">		
+	<h4 class="widget-title"><span>Статьи</span></h4>		
+		<ul>
+		{% for post1 in post1 %}
+		<li>
+			<a href="http://127.0.0.1:8000{{ item.post_url}}">{{post1.title}}</a>
+			<span class="post-date">{{post1.post_date}}</span>
+			</li>
+        {% endfor %}
+		</ul>
+		<a href="http://elecso.ru/poleznaya-informaciya" class="prohtec">Читать далее →</a>
+	</aside>		
+</div>
+</div>
+
+
+			        </div><!--/row -->
+    </div><!--/content -->
+</div><!--/container -->
+
+</div>
+</div><!--/page-container -->
+
+</div><!--/wrapper-->
+</div><!-- close #cg-page-wrap -->
+
+
+{% endblock body %}

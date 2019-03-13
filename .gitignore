@@ -1,0 +1,10 @@
+*.pyc
+*.log
+*~
+tmp
+__pycache__
+elecso/static/img
+elecso/static/info
+elecso/static/catalog
+public/
+elecso/db.sqlite3
